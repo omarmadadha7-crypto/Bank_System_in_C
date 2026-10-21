@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{22d8c112-6fd0-47e0-a8cf-aeb760029494}</ProjectGuid>
+    <RootNamespace>BankSystem</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Bank_System.cpp" />
+    <ClCompile Include="src\Core\clsBankCLient.cpp" />
+    <ClCompile Include="src\Core\clsCurrency.cpp" />
+    <ClCompile Include="src\Core\clsPerson.cpp" />
+    <ClCompile Include="src\Core\clsUser.cpp" />
+    <ClCompile Include="src\Core\clsUserLog.cpp" />
+    <ClCompile Include="src\Core\Global.cpp" />
+    <ClCompile Include="src\Lib\clsCheck.cpp" />
+    <ClCompile Include="src\Lib\clsDate.cpp" />
+    <ClCompile Include="src\Lib\clsInputValidate.cpp" />
+    <ClCompile Include="src\Lib\clsString.cpp" />
+    <ClCompile Include="src\Lib\clsUtil.cpp" />
+    <ClCompile Include="src\Screen\Client\clsAddNewClientScreen.cpp" />
+    <ClCompile Include="src\Screen\Client\clsClientListScreen.cpp" />
+    <ClCompile Include="src\Screen\Client\clsDeleteClientScreen.cpp" />
+    <ClCompile Include="src\Screen\Client\clsFindClientScreen.cpp" />
+    <ClCompile Include="src\Screen\Client\clsUpdateClientScreen.cpp" />
+    <ClCompile Include="src\Screen\clsLoginScreen.cpp" />
+    <ClCompile Include="src\Screen\clsMainScreen.cpp" />
+    <ClCompile Include="src\Screen\clsScreen.cpp" />
+    <ClCompile Include="src\Screen\Currencies\clsCurrenciesListScreen.cpp" />
+    <ClCompile Include="src\Screen\Currencies\clsCurrencyCalculatorScreen.cpp" />
+    <ClCompile Include="src\Screen\Currencies\clsCurrencyExchangeMainScreen.cpp" />
+    <ClCompile Include="src\Screen\Currencies\clsFindCurrencyScreen.cpp" />
+    <ClCompile Include="src\Screen\Currencies\clsUpdateCurrencyRateScreen.cpp" />
+    <ClCompile Include="src\Screen\Transactions\clsDepositScreen.cpp" />
+    <ClCompile Include="src\Screen\Transactions\clsTotalBalancesScreen.cpp" />
+    <ClCompile Include="src\Screen\Transactions\clsTransactionsScreen.cpp" />
+    <ClCompile Include="src\Screen\Transactions\clsTransferLogScreen.cpp" />
+    <ClCompile Include="src\Screen\Transactions\clsTransferScreen.cpp" />
+    <ClCompile Include="src\Screen\Transactions\clsWithdrawScreen.cpp" />
+    <ClCompile Include="src\Screen\User\clsAddNewUserScreen.cpp" />
+    <ClCompile Include="src\Screen\User\clsDeleteUserScreen.cpp" />
+    <ClCompile Include="src\Screen\User\clsFindUserScreen.cpp" />
+    <ClCompile Include="src\Screen\User\clsListUsersScreen.cpp" />
+    <ClCompile Include="src\Screen\User\clsLoginRegisterScreen.cpp" />
+    <ClCompile Include="src\Screen\User\clsManageUsersScreen.cpp" />
+    <ClCompile Include="src\Screen\User\clsShowLoginRegisterScreen.cpp" />
+    <ClCompile Include="src\Screen\User\clsUpdateUserScreen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Bank_System.slnx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="data\data.h" />
+    <ClInclude Include="include\Core\clsBankCLient.h" />
+    <ClInclude Include="include\Core\clsCurrency.h" />
+    <ClInclude Include="include\Core\clsPerson.h" />
+    <ClInclude Include="include\Core\clsUser.h" />
+    <ClInclude Include="include\Core\clsUserLog.h" />
+    <ClInclude Include="include\Core\Global.h" />
+    <ClInclude Include="include\Core\InterfaceCommunication.h" />
+    <ClInclude Include="include\Lib\clsCheck.h" />
+    <ClInclude Include="include\Lib\clsDate.h" />
+    <ClInclude Include="include\Lib\clsInputValidate.h" />
+    <ClInclude Include="include\Lib\clsString.h" />
+    <ClInclude Include="include\Lib\clsUtil.h" />
+    <ClInclude Include="include\Screen\Client\clsAddNewClientScreen.h" />
+    <ClInclude Include="include\Screen\Client\clsClientListScreen.h" />
+    <ClInclude Include="include\Screen\Client\clsDeleteClientScreen.h" />
+    <ClInclude Include="include\Screen\Client\clsFindClientScreen.h" />
+    <ClInclude Include="include\Screen\Client\clsUpdateClientScreen.h" />
+    <ClInclude Include="include\Screen\clsLoginScreen.h" />
+    <ClInclude Include="include\Screen\clsMainScreen.h" />
+    <ClInclude Include="include\Screen\clsScreen.h" />
+    <ClInclude Include="include\Screen\Currencies\clsCurrenciesListScreen.h" />
+    <ClInclude Include="include\Screen\Currencies\clsCurrencyCalculatorScreen.h" />
+    <ClInclude Include="include\Screen\Currencies\clsCurrencyExchangeMainScreen.h" />
+    <ClInclude Include="include\Screen\Currencies\clsFindCurrencyScreen.h" />
+    <ClInclude Include="include\Screen\Currencies\clsUpdateCurrencyRateScreen.h" />
+    <ClInclude Include="include\Screen\Transactions\clsDepositScreen.h" />
+    <ClInclude Include="include\Screen\Transactions\clsTotalBalancesScreen.h" />
+    <ClInclude Include="include\Screen\Transactions\clsTransactionsScreen.h" />
+    <ClInclude Include="include\Screen\Transactions\clsTransferLogScreen.h" />
+    <ClInclude Include="include\Screen\Transactions\clsTransferScreen.h" />
+    <ClInclude Include="include\Screen\Transactions\clsWithdrawScreen.h" />
+    <ClInclude Include="include\Screen\User\clsAddNewUserScreen.h" />
+    <ClInclude Include="include\Screen\User\clsDeleteUserScreen.h" />
+    <ClInclude Include="include\Screen\User\clsFindUserScreen.h" />
+    <ClInclude Include="include\Screen\User\clsListUsersScreen.h" />
+    <ClInclude Include="include\Screen\User\clsLoginRegisterScreen.h" />
+    <ClInclude Include="include\Screen\User\clsManageUsersScreen.h" />
+    <ClInclude Include="include\Screen\User\clsShowLoginRegisterScreen.h" />
+    <ClInclude Include="include\Screen\User\clsUpdateUserScreen.h" />
+    <ClInclude Include="src\Core\InterfaceCommunication.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data\bank_errors.log" />
+    <Text Include="data\ClientData.txt" />
+    <Text Include="data\Currencies.txt" />
+    <Text Include="data\MyFile.txt" />
+    <Text Include="data\TransferLog.txt" />
+    <Text Include="data\UsersData.txt" />
+    <Text Include="data\Userslog.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
